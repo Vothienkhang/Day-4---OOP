@@ -14,8 +14,10 @@ public class Main_StopWatch {
         StopWatch sw = new StopWatch();
 
         sw.start();
+        System.out.println("Start time: " + sw.getStartTime());
         selectionSort(arr);
         sw.stop();
+        System.out.println("Stop time: " + sw.getStopTime());
 
         System.out.println("Elapsed time: " + sw.getElapsedTime() + " ms");
     }
