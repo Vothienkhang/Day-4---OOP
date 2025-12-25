@@ -1,0 +1,16 @@
+package Shape;
+
+import java.util.Comparator;
+
+public class CircleComparator implements Comparator<CircleTest> {
+    @Override
+    public int compare(CircleTest c1, CircleTest c2) {
+        if (c1.getRadius() > c2.getRadius()) {
+            return 1;
+        } else if (c1.getRadius() < c2.getRadius()) {
+            return -1;
+        } else  {
+            return 0;
+        }
+    }
+}
